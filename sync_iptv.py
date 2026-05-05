@@ -8,10 +8,7 @@ EPG_URL = "https://raw.githubusercontent.com/AqFad2811/epg/main/indonesia.xml"
 OUTPUT_FILE = "indonesia_synced.m3u"
 
 def clean_name(name):
-    """Membersihkan nama channel dari simbol dan spasi agar mudah dicocokkan"""
-    if not name:
-        return ""
-    # Hapus kata-kata resolusi yang sering bikin gagal cocok
+    if not name: return ""
     name = re.sub(r'(?i)\b(HD|FHD|SD|4K|1080p|720p)\b', '', str(name))
     return re.sub(r'[^a-zA-Z0-9]', '', name).lower()
 
@@ -22,7 +19,6 @@ def main():
         epg_response.raise_for_status()
         root = ET.fromstring(epg_response.content)
 
-        # Map EPG: clean_name -> { 'id': tvg-id, 'name': Nama Resmi EPG }
         epg_data = {}
         for channel in root.findall('channel'):
             ch_id = channel.get('id')
@@ -32,8 +28,6 @@ def main():
                 cleaned = clean_name(name)
                 epg_data[cleaned] = {'id': ch_id, 'name': name}
 
-        print(f"   Ditemukan {len(epg_data)} channel di EPG.")
-
         print("2. Mengunduh data M3U...")
         m3u_response = requests.get(M3U_URL, timeout=30)
         m3u_response.raise_for_status()
@@ -42,49 +36,72 @@ def main():
         output_lines = ["#EXTM3U"]
         matched_count = 0
         total_indo = 0
-
-        print("3. Memfilter & Menyinkronkan...")
-        i = 0
-        while i < len(lines):
-            line = lines[i]
+        
+        # Variabel untuk menampung baris-baris satu channel utuh
+        current_block = []
+        
+        print("3. Memproses blok per channel...")
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+                
+            if line.upper().startswith("#EXTM3U"):
+                continue # Skip header pertama
+                
+            # Kumpulkan semua baris ke dalam blok
+            current_block.append(line)
             
-            # Jika baris adalah info channel
-            if line.startswith("#EXTINF"):
-                # Cek apakah ini channel kategori Indonesia
-                if re.search(r'group-title="[^"]*Indonesia[^"]*"', line, re.IGNORECASE):
-                    total_indo += 1
+            # Jika baris ini BUKAN diawali '#', berarti ini adalah link URL stream.
+            # Artinya, SATU BLOK CHANNEL SUDAH SELESAI dan siap diproses.
+            if not line.startswith("#"):
+                
+                # Cari di mana posisi baris #EXTINF di dalam blok ini
+                extinf_index = -1
+                for idx, b_line in enumerate(current_block):
+                    if b_line.upper().startswith("#EXTINF"):
+                        extinf_index = idx
+                        break
+                
+                # Jika baris #EXTINF ditemukan
+                if extinf_index != -1:
+                    extinf_line = current_block[extinf_index]
                     
-                    # Ambil nama channel di M3U (teks setelah koma terakhir)
-                    parts = line.split(',')
-                    original_name = parts[-1].strip()
-                    cleaned_name = clean_name(original_name)
-
-                    # Jika nama channel M3U ada di database EPG kita
-                    if cleaned_name in epg_data:
-                        ch_id = epg_data[cleaned_name]['id']
-                        epg_name = epg_data[cleaned_name]['name']
+                    # Cek apakah ini kategori Indonesia
+                    if re.search(r'group-title="[^"]*Indonesia[^"]*"', extinf_line, re.IGNORECASE):
+                        total_indo += 1
                         
-                        # 1. Hapus tvg-id lama jika ada, lalu pasang tvg-id yang baru dari EPG
-                        line = re.sub(r'tvg-id="[^"]*"', '', line) # Hapus yang lama
-                        line = line.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-id="{ch_id}"')
+                        # Ekstrak nama channel
+                        parts = extinf_line.split(',')
+                        original_name = parts[-1].strip()
+                        cleaned_name = clean_name(original_name)
                         
-                        # 2. Ganti nama channel di ujung baris dengan nama resmi dari EPG
-                        # Gabungkan kembali semua bagian sebelum koma terakhir, lalu tambahkan epg_name
-                        base_extinf = ",".join(parts[:-1])
-                        line = f"{base_extinf},{epg_name}"
+                        # Jika nama cocok dengan EPG, lakukan sinkronisasi
+                        if cleaned_name in epg_data:
+                            ch_id = epg_data[cleaned_name]['id']
+                            epg_name = epg_data[cleaned_name]['name']
+                            
+                            # Hapus tvg-id lama dan ganti dengan yang baru
+                            extinf_line = re.sub(r'tvg-id="[^"]*"', '', extinf_line)
+                            extinf_line = extinf_line.replace('#EXTINF:-1', f'#EXTINF:-1 tvg-id="{ch_id}"')
+                            
+                            # Ganti nama channel dengan nama dari EPG
+                            base_extinf = ",".join(parts[:-1])
+                            extinf_line = f"{base_extinf},{epg_name}"
+                            
+                            # Bersihkan spasi berlebih
+                            extinf_line = re.sub(r'\s+', ' ', extinf_line).replace(' ,', ',')
+                            
+                            matched_count += 1
                         
-                        # Bersihkan spasi ganda yang mungkin terjadi
-                        line = re.sub(r'\s+', ' ', line).replace(' ,', ',')
+                        # Update baris #EXTINF di dalam blok dengan yang sudah disinkronisasi
+                        current_block[extinf_index] = extinf_line
                         
-                        matched_count += 1
-                    
-                    # Masukkan baris #EXTINF yang sudah diolah
-                    output_lines.append(line)
-                    
-                    # Masukkan baris URL stream di bawahnya (biasanya baris berikutnya)
-                    if i + 1 < len(lines) and not lines[i + 1].startswith("#"):
-                        output_lines.append(lines[i + 1])
-            i += 1
+                        # Masukkan SELURUH blok channel (termasuk EXTVLCOPT dan URL) ke output
+                        output_lines.extend(current_block)
+                
+                # Kosongkan blok untuk mulai membaca channel berikutnya
+                current_block = []
 
         # 4. Simpan ke file output
         with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
