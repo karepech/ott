@@ -80,8 +80,8 @@ https://d3b0v7fggu5zwm.cloudfront.net/out/v1/f3df48faafaf4198a65b9763140fce30/in
 #KODIPROP:inputstream.adaptive.license_key=c1e5a6713acc4774a622d01177224094:d88b67279524d26984f9c0041442b5c6
 #EXTINF:-1 tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/kompastv.png" group-title="Indonesia",Kompas TV
 https://d2xz2v5wuvgur6.cloudfront.net/out/v1/dafcaf8b26064ae7b27702088240b535/index.mpd
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="CNN.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/cnn5.png" group-title="Indonesia",CNN Indonesia
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 https://live.cnnindonesia.com/livecnn/smil:cnntv/chunklist_w1188349826_b384000_sleng.m3u8
 #EXTINF:-1 tvg-id="CNBCIndonesia.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/cnbc5.png" group-title="Indonesia",CNBC Indonesia
 #EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
@@ -92,8 +92,8 @@ https://live.cnbcindonesia.com/livecnbc/smil:cnbctv/master.m3u8
 #KODIPROP:inputstream.adaptive.license_key=c64493155d8b443c834a13d4970cf834:509294911ac3c2d779ae2225a23460b4
 #EXTINF:-1 tvg-id="MetroTV" tvg-url="mm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/metrotv5.png" group-title="Indonesia",Metro TV
 https://d2tjypxxy769fn.cloudfront.net/out/v1/fd4360b1c12c4375848c8f085fd51d41/index.mpd
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
 #EXTINF:-1 tvg-id="Berita Satu" group-title="Indonesia" tvg-url="mm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/berita15.png",Berita Satu
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0
 http://op-group1-swiftservehd-1.dens.tv/h/h209/index.m3u8
 #EXTVLCOPT:http-referrer=https://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Windows NT 10.0; Win64; x64 AppleWebKit/537.36 KHTML, like Gecko Chrome/144.0.0.0 Safari/537.36
@@ -143,11 +143,11 @@ http://cdn.nng.cloudns.us/live/m3u8/id/6183ec225226ccf.m3u8
 #EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="Garuda TV" tvg-url="mm"  tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/garuda.png" group-title="Indonesia",Garuda TV
 https://hgmtv.com:19360/garudatvlivestreaming/720p.m3u8
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="TV ONE.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/jtv.png" group-title="Indonesia",JTV
-http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8
 #EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
+http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Jowo Channel"tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/jowo.png" group-title="Indonesia",Channel Jowo
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 http://khano.nng.cloudns.us/live/m3u8/id/1de333734b1b7e0.m3u8
 #EXTINF:-1tvg-id="Dhoho Channel"tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/dhoho5.png" group-title="Indonesia",Dhoho TV
 #EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
@@ -160,8 +160,8 @@ https://saktitv.siar.us/saktitv/live/playlist.m3u8
 #KODIPROP:inputstream.adaptive.license_key=fee85fded8ea4591b643468412bee3be:7e364f3ffd09c7b51c8d81430819177f
 #EXTINF:-1 tvg-id="Jak TV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/jaktv.png" group-title="Indonesia",JAKTV
 https://atemeshield1-voe.sysln.id/live/eds/JAKTV/mediampd/JAKTV.mpd
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="TV ONE.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/btv.png" group-title="Indonesia",BTV
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 https://op-group1-swiftservehd-1.dens.tv/h/h210/index.m3u8
 #EXTINF:-1 tvg-id="TV ONE.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/Knowledge5.png" group-title="Indonesia",Dens Knowledge
 #EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
@@ -178,6 +178,6 @@ https://d1vckova5fh9mt.cloudfront.net/out/v1/17c724036c5f4615bd0b8093126b5c44/in
 #KODIPROP:inputstream.adaptive.license_key=https://ott-balancer.tvri.go.id/
 #EXTINF:-1 tvg-id="TVRI" tvg-url="mm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/tvri.png" group-title="Indonesia",TVRI Nasional
 https://d84q7nw4qf3j3.cloudfront.net/out/v1/b642f32e396042f981d83fbb5f472272/index.mpd
-#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 #EXTINF:-1 tvg-id="TVRI World" tvg-url="mm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/tvri.png" group-title="Indonesia",TVRI World
+#EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 https://raw.githubusercontent.com/jrpahe-del/M3U8/refs/heads/main/tvriwo.m3u8
