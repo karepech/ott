@@ -1,0 +1,42 @@
+name: Auto Update IPTV Playlist
+
+# Skrip ini berjalan setiap 6 jam dan bisa dijalankan manual
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+# Konfigurasi perizinan agar bot bisa menulis/menyimpan file ke repositori
+permissions:
+  contents: write
+
+jobs:
+  grab_and_update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          
+      - name: Eksekusi Skrip Grabber
+        run: php grabber.php
+
+      - name: Commit dan Push Hasil
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add playlist.m3u
+          
+          # Mengecek apakah ada perubahan pada file sebelum commit
+          if git diff --staged --quiet; then
+            echo "Tidak ada pembaruan pada playlist, melewati proses commit."
+          else
+            git commit -m "Auto-update playlist.m3u: $(date +'%Y-%m-%d %H:%M:%S')"
+            git push origin HEAD:${{ github.ref }}
+            echo "Pembaruan berhasil di-push ke repositori."
+          fi
