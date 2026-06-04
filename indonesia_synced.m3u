@@ -106,7 +106,7 @@ https://tvstreamcast.com/indonesiana.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=|user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 #EXTINF:-1 group-title="Indonesia" tvg-id="SindoNews" tvg-url="mm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/sindonews5.png",SindoNews
-https://cdn10jtedge.indihometv.com/atm/DASH/mncnews/manifest.mpd
+https://indihuy.streamized.net/atm/DASH/mncnews/manifest.mpd
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 #KODIPROP:inputstream.adaptive.license_type=clearkey
@@ -122,7 +122,7 @@ https://indihuy.streamized.net/atm/DASH/jtv/manifest.mpd
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 #KODIPROP:inputstream.adaptive.stream_headers=User-Agent=|user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 #EXTINF:-1 group-title="Indonesia"  tvg-url="hmm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/antara5.png",Antara TV
-https://cdn10jtedge.indihometv.com/atm/DASH/antara/manifest.mpd
+https://indihuy.streamized.net/atm/DASH/antara/manifest.mpd
 #EXTVLCOPT:http-referrer=https://www.visionplus.id/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
 #EXTINF:-1 tvg-id="DAAI TV" tvg-url="mm" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/daai.png" group-title="Indonesia",DAAI TV
