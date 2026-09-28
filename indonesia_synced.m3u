@@ -48,17 +48,9 @@ https://calistaiptv.my.id/indopart/play.m3u8?id=782&type=hls
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 https://beetv.my.id/xstreamx/rctiplus.m3u8?ch=gtv
 #EXTINF:-1 tvg-id="RTV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/rtv.png" group-title="Indonesia",RTV
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=87484c0b2a4c41b9b08249ef7817ad7f:ff4f3f232f747e5e7f616b4741fa5c32
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://d84q7nw4qf3j3.cloudfront.net/out/v1/b0eebcecfb12424cb5f3c3cdb239f3c1/index.mpd
-#EXTINF:-1 tvg-id="Mentari TV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/mentari.png" group-title="Indonesia",Mentari TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=340ff241ff754b038f07096e17104cdc:839bdf4f1523661ba61df2dc219878a3
-https://d84q7nw4qf3j3.cloudfront.net/out/v1/703a71abac3844748b1e68166242d4f3/index.mpd
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=http://www.dens.tv/
+https://op-flashcon-digdayahd-1.dens.tv/h/h10/index.m3u8?app_type=web&userid=lite&chname=RTV
 #EXTINF:-1 tvg-name="Moji tv" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/moji.png" group-title="Indonesia",MOJI TV
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
@@ -91,12 +83,6 @@ https://live.cnbcindonesia.com/livecnbc/smil:cnbctv/playlist.m3u8
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
 https://op-flashcon-digdayahd-1.dens.tv/h/h12/index.m3u8
-#EXTINF:-1 tvg-id="BTV tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/btv.png" group-title="Indonesia",BTV
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=47d8c564b0eb4d6ba83f7b155c827024:098f10e1734d00c0177bae1236db60fc
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/3112ca4fbc2642e79ecaf9b2b0999e07/index.mpd
 #EXTINF:-1 tvg-id="B Satu" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/berita15.png" group-title="Indonesia",Berita Satu
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36
@@ -107,12 +93,6 @@ https://tvstreamcast.com/indonesiana.m3u8
 #EXTINF:-1 tvg-id="Sindo News" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/sindonews5.png" group-title="Indonesia",SindoNews
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0
 https://cdnbal1.indihometv.com/atm/DASH/mncnews/index_720p.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:145.0) Gecko/20100101 Firefox/145.0
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=941717a97fe946069fd7ebc7afb48402:305d9297ec5797e7fd8aca03142b3b7e
-#EXTINF:-1 tvg-id="IDX Ch" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/idx.png" group-title="Indonesia",IDX Channel
-https://d2xx73ro32cip.cloudfront.net/out/v1/db34a1b61f414d2181c29f1892bc8d0b/index.mpd
 #EXTINF:-1 tvg-id="SINPO" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/shinpo5.png" group-title="Indonesia" ,SIN PO TV
 #KODIPROP:inputstreamaddon=inputstream.adaptive
 #KODIPROP:inputstream.adaptive.manifest_type=hls
@@ -141,13 +121,7 @@ https://hgmtv.com:19360/garudatvlivestreaming/720p.m3u8
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=994121840707471a920b2e65bdf21b7e:0033ae3118a0153ad05fc9a066a8805c
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-https://d3b0v7fggu5zwm.cloudfront.net/out/v1/77641c37b4834a9db823ec5137774973/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=9cf20a8618854bb8bf3b7891c6cb5606:7284d5c76c7f913632c715f3d5c5aa8a
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="BALI TV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/balitv5.png" group-title="Indonesia",Bali TV
-https://d2tjypxxy769fn.cloudfront.net/out/v1/44a2d1ab71a740babb233cf14832c59d/index.mpd
+#https://d3b0v7fggu5zwm.cloudfront.net/out/v1/77641c37b4834a9db823ec5137774973/index.mpd
 #EXTINF:-1 tvg-id="Jowo Ch"tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/jowo.png" group-title="Indonesia",Channel Jowo
 #EXTVLCOPT:http-user-agent=DRM Player/2.5.6 (Linux; Android 14; 24040RN64Y) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Mobile Safari/537.36 ExoPlayerLib/1.10.0-alpha01
 http://khano.nng.cloudns.us/live/m3u8/id/1de333734b1b7e0.m3u8
@@ -166,36 +140,6 @@ https://op-flashcon-digdayasd-1.dens.tv/h/h216/stream.m3u8?app_type=web&userid=l
 #KODIPROP:inputstream.adaptive.manifest_type=hls
 #EXTVLCOPT:http-user-agent=VidioPlayer/6.41.11
 https://calistaiptv.my.id/indopart/play.m3u8?id=5415&type=hls
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=0de1f882d278465abdba73a8b4cb2bda:7061f5e1115d6ef504726c3faa8bf146
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="Hanacaraka.TV.id" tvg-name="" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/hanacaraka.png" group-title="Indonesia",Hanacaraka TV
-https://d1vckova5fh9mt.cloudfront.net/out/v1/17c724036c5f4615bd0b8093126b5c44/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=clearkey
-#KODIPROP:inputstream.adaptive.license_key=86e50e1506af46c780233c0091b67159:549788738d10df77094a0d4efaf0d567
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="bandungtv" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/bandungtv.png" group-title="Indonesia",Bandung TV
-https://d3b0v7fggu5zwm.cloudfront.net/out/v1/f16b53f0d5ed459da208c459049c9bb0/index.mpd
-#EXTINF:-1 tvg-id="BiznetAdventure.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/biznetad.png" group-title="Indonesia",Biznet Adventure
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
-http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BiznetLifestyle.id" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/biznetst.png" group-title="Indonesia",Biznet Lifestyle
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:143.0) Gecko/20100101 Firefox/143.0
-http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/playlist.m3u8
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=cf8d36bbfa904cb8a1c714dd74217cf2:97c0f4b08a496f8ab05e46f29a71c7c8
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="DMI TV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/dmitv.png" group-title="Indonesia",DMI TV
-https://d2tjypxxy769fn.cloudfront.net/out/v1/319544fbde164be4b023d62fcd116d14/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=c2e6de6943ef47d08c2634a2df4bcece:badf619476b3bf0889ab545e8d3926f6
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="MuslimTV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/muslimtv.png" group-title="Indonesia",Muslim TV
-https://d2gr3zenqo3tg4.cloudfront.net/out/v1/a8f14e34c687494fb1454b88742db085/index.mpd
 #EXTINF:-1 tvg-id="Rodja" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/rodja.png" group-title="Indonesia", RodjaTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36
 #EXTVLCOPT:http-referrer=http://www.dens.tv/
@@ -205,31 +149,8 @@ https://op-flashcon-digdayahd-1.dens.tv/h/h233/index.m3u8?app_type=web&userid=li
 #KODIPROP:inputstream.adaptive.license_key=730bf9b6641f4ca597fd0d2903ffc574:293446fd53697862b165984b860fd7b0
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-id="TV9" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/tv9.png" group-title="Indonesia",TV 9 NUSANTARA
-https://d3b0v7fggu5zwm.cloudfront.net/out/v1/9688c51b534d4165bf4b0b328e53b980/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=94f0b3d645c64f0dbe2e0990ec290cdf:0dc311915f9decffaf7dfee30c4d8482
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="TVmui" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/tvmui.png" group-title="Indonesia",TV MU
-https://d84q7nw4qf3j3.cloudfront.net/out/v1/980cfe26ff00479c97eb8057a1129c7f/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=070756a16fd44081b6c2d64e40346b9e:d5fa9eaa7fd94f93d1b613d1ff0a5f91
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="Ewtn TV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/ewtn.png" group-title="Indonesia",Ewtn TV
-https://d3b0v7fggu5zwm.cloudfront.net/out/v1/96e20532df53449ab254f765073ec866/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=08e5cf90e8c04a7fa90f5c126768b239:b9406a99b9ea4b07149ecc582faf2613
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="Life TV" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/lifetv.png" group-title="Indonesia",Life TV
-https://d2xx73ro32cip.cloudfront.net/out/v1/a61250017f23459692bf28a6841cf087/index.mpd
-#EXTVLCOPT:http-referrer=https://www.visionplus.id/
-#KODIPROP:inputstream.adaptive.license_type=org.w3.clearkey
-#KODIPROP:inputstream.adaptive.license_key=729e39db83984d58a23e16f2c05f915f:0d3871bf01b6d871c9882265fb78e8fa
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="Reformed" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/reformed21.png" group-title="Indonesia",Reformed 21
-https://d2xz2v5wuvgur6.cloudfront.net/out/v1/623c771560e443f2920ea5be99016b7e/index.mpd
+#https://d3b0v7fggu5zwm.cloudfront.net/out/v1/9688c51b534d4165bf4b0b328e53b980/index.mpd
+https://raw.githubusercontent.com/jrpahe-del/M3U8/refs/heads/main/tv9.m3u8
 #EXTINF:-1 tvg-id="TVRI" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/tvri.png" group-title="Indonesia",TVRI Nasional
 https://ott-balancer.tvri.go.id/live/eds/Nasional/hls/Nasional.m3u8
 #EXTINF:-1 tvg-id="TVRI" tvg-logo="https://raw.githubusercontent.com/jrpahe-del/Logo/refs/heads/main/tvri.png" group-title="Indonesia",TVRI Jakarta
